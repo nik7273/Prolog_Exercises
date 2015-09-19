@@ -14,7 +14,7 @@ vp(X,Z):- tv(X,Y),  np(Y,Z).
     
 vp(X,Z):- iv(X,Z). 
 
-vp(X,Z):- iv(X,Y), adv(X,Z).
+vp(X,Z):- iv(X,Y), adv(Y,Z).
 
 vp(W,Z):- dv(W,X), np(X,Y), pp(Y,Z).
 
@@ -29,7 +29,7 @@ det([his|W],W).
 det([their|W],W).
 det([its|W],W).
 det([an|W],W).
-det([mother''s|W],W). 
+det([mothers|W],W). 
 det([any|W],W).
     
 n([pain|W],W). 
@@ -131,7 +131,7 @@ tv([provide|W],W).
 
 dv([happened|W],W).
 dv([relates|W],W).
-dv([went|W],W),
+dv([went|W],W).
 
 sv([states|W],W).
 
@@ -167,7 +167,6 @@ adj([reconstructive|W],W).
 adj([psychiatric|W],W).
 adj([recent|W],W).
 adj([tristate|W],W).
-adj([sudden|W],W).
 adj([cardiac|W],W).
 adj([autoimmune|W],W).
 adj([clotting|W],W).
